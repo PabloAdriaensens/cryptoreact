@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import OptionSelect from "./OptionSelect";
 
 class Formulario extends Component{
     render() {
@@ -17,7 +18,12 @@ class Formulario extends Component{
                 <div className="form-group">
                     <label>Criptomoneda</label>
                     <select className="form-control">
-
+                        {Object.keys(this.props.monedas).map(key => (
+                            <OptionSelect
+                                key={key}
+                                moneda={this.props.monedas[key]}
+                            />
+                        ))}
                     </select>
                 </div>
                 <div className="form-group">
