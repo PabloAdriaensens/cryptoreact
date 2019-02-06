@@ -59,6 +59,7 @@ class App extends Component {
                         />
                         <Resultado
                             cotizacion={this.state.cotizacion}
+                            monedaCotizada={this.state.monedaCotizada}
                         />
                     </div>
                 </div>
