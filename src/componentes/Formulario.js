@@ -15,9 +15,10 @@ class Formulario extends Component{
             crypto: this.cryptoRef.current.value
         };
 
-        console.log(cotizacion);
+        // console.log(cotizacion);
 
         // Enviar por props
+        this.props.obtenerValoresCrypto(cotizacion);
     };
 
     render() {
